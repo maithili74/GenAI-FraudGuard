@@ -4,7 +4,7 @@ FraudGuard is an end-to-end fraud detection and investigation system built on th
 
 This project demonstrates how modern financial fraud systems move beyond binary flags into explainable, investigator-ready intelligence.
 
-## Ket Features
+## Key Features
 
 ## Multi-Layer Fraud Scoring
 
