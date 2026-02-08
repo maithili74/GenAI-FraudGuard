@@ -13,8 +13,7 @@ FraudGuard evaluates each transaction using:
 * ML Fraud Score (anomaly detection model)
 * Rule Engine Score (domain rules: balance mismatch, risky transaction types, etc.)
 * Final Fraud Score (weighted ensemble of ML + rules)
-* 
-Transactions crossing a risk threshold are automatically flagged.
+* Transactions crossing a risk threshold are automatically flagged.
 
 ## AI Investigator (LLM)
 
@@ -43,3 +42,7 @@ The dashboard allows users to:
 * Scikit-learn
 * LLMs via Free APIs - Groq (LLaMA-3.1)
 * Streamlit
+
+## Dataset
+
+Paysim dataset from Kaggle Website
