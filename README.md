@@ -53,10 +53,10 @@ Dataset used: https://www.kaggle.com/datasets/ealaxi/paysim1
 Gen-AI_FraudGuard/
 │
 ├── Codes/                          # Main code directory
-│   ├── datapreprocess_model.ipynb   # Data preprocessing and demand forecasting model development
-│   ├── llm_investigations.ipynb             # Inventory optimization calculations (safety stock, reorder point, EOQ, etc.)
-│   ├── check_for_fraudid.ipynb         # Decision rule implementation for reorder logic
-│   └── frontend.py                 # Streamlit frontend for visualizing inventory status and reorder recommendations
+│   ├── datapreprocess_model.ipynb   
+│   ├── llm_investigations.ipynb            
+│   ├── check_for_fraudid.ipynb      
+│   └── frontend.py                
 │
 ├── Datasets/                       
 │   ├── paysim_processed_with_scores.csv    
