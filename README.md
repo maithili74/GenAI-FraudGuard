@@ -1,4 +1,4 @@
-# GenAI-FraudGuard
+# FraudGuard: AI-Powered Fraud Detection & Investigation System
 
 FraudGuard is an end-to-end fraud detection and investigation system built on the PaySim dataset, combining Machine Learning, Rule-Based Scoring, and LLM-driven explanations, with an interactive Streamlit dashboard for real-time analysis.
 
@@ -45,4 +45,43 @@ The dashboard allows users to:
 
 ## Dataset
 
-Paysim dataset from Kaggle Website
+Dataset used: https://www.kaggle.com/datasets/ealaxi/paysim1
+
+## Project Architecture
+
+```bash
+Gen-AI_FraudGuard/
+│
+├── Codes/                          # Main code directory
+│   ├── datapreprocess_model.ipynb   # Data preprocessing and demand forecasting model development
+│   ├── llm_investigations.ipynb             # Inventory optimization calculations (safety stock, reorder point, EOQ, etc.)
+│   ├── check_for_fraudid.ipynb         # Decision rule implementation for reorder logic
+│   └── frontend.py                 # Streamlit frontend for visualizing inventory status and reorder recommendations
+│
+├── Datasets/                       
+│   ├── paysim_processed_with_scores.csv    
+│   ├── paysim_processed.csv 
+│   └── paysim_sample.csv 
+│
+└── README.md
+```
+## Fraud Scoring Logic
+```bash
+Total Fraud Score =
+0.6 × ML Fraud Score +
+0.2 × Rule Score +
+0.2 × LLM Score
+
+Flagging threshold:
+
+Total Fraud Score ≥ 0.7 → Flagged Fraud
+```
+## Results
+
+This project reflects real-world fraud systems used in fintech and banking:
+
+- Combines statistical ML with deterministic rules
+- Adds explainability, not just predictions
+- Optimizes LLM usage for cost and relevance
+- Focuses on analyst workflow, not just model accuracy
+
